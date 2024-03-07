@@ -1,0 +1,8 @@
+body{
+ background-color: green;
+}
+.nav-bar{
+  height: 20px;
+  width: 600px;
+  background-color: red;
+}

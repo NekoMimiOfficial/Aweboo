@@ -1,0 +1,29 @@
+:root{
+  --DARK: #1E1E2E;
+  --DACC: #2E2E3E;
+  --LIGHT: #CDD6F4;
+  --LACC: #B0C0F0;
+
+  --TEXT_L: #223;
+  --TEXT_D: #CDF;
+
+  --Blue: #799DDB;
+  --Red: #F38BA8;
+  --Cyan: #89DCEB;
+  --Pink: #F5C2E7;
+  --Yellow: #F9E2AF;
+  --Orange: #F3B993;
+  --Green: #A2DCAA;
+  --Purr: #C6A1F0;
+
+  --ff: monospace, sans-serif;
+
+  --debug: rgba(255,0,0,0.3);
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--LIGHT);
+  color: var(--TEXT_L);
+}
