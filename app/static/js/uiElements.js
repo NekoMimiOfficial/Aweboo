@@ -9,11 +9,17 @@ async function connectPFP(userImage) {
   document.getElementById('user-pfp').style.display = 'block';
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+function showUI(){
+  document.getElementById('loader-body').style.animationName = 'opening';
+}
+
+function sleep(ms){
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function main(){
   await sleep(3000);
   connectPFP('/static/neko.png');
+  loadNav();
+  showUI();
 }

@@ -1,8 +1,19 @@
 body{
   margin: 0px;
   padding: 0px;
-  background-color: var(--background);
+  background-color: black;
   color: var(--text);
+}
+
+.window-decorations{
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  z-index: -1;
+  background-color: var(--background);
+  width: calc(100% - 2px);
+  height: calc(100% - 4px);
+  border-radius: 8px;
 }
 
 .nav-bar{
@@ -12,11 +23,13 @@ body{
   width: calc(100% - 40px);
   bottom: 20px;
   left: 20px;
+  z-index: 99998;
+  transition: 0.2s;
   border-radius: 40px;
   background-color: var(--navbar);
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0 0 16px -4px var(--navbar);
+  box-shadow: 0 0 12px 2px var(--navbar);
 }
 
 .nav-element{
@@ -42,12 +55,12 @@ body{
   position: fixed;
   top: 14px;
   right: 10px;
-  z-index: 99;
+  z-index: 99999;
 }
 
 #user-pfp{
-  height: 46px;
-  width: 46px;
+  height: 50px;
+  width: 50px;
   display: none;
   border-radius: 50%;
   background-color: var(--user-pfp-background);
@@ -59,7 +72,7 @@ body{
   width: 0px;
   border-radius: 34px;
   outline: 1px solid var(--user-pfp-ring);
-  background-color: var(--user-pfp-ring);
+  background-color: var(--user-pfp-ring-background);
   transition: 0.2s;
   animation-name;
   animation-delay: 0.3s;
@@ -112,10 +125,11 @@ body{
   transform: translate(0%, 0%);
   height: 100%;
   width: 100%;
+  z-index: 100000;
   font-size: 60px;
   background-color: var(--search-bar);
   border-radius: 0px;
-  animation: opening 0.38s linear;
+  animation: 0.38s linear;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }

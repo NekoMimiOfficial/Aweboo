@@ -1,0 +1,30 @@
+/* Pink Fever theme             */
+/* ~~~~~~~~~~~~~~~~             */
+/* NekoMimiOfficial 8/MAR/2024  */
+/* This theme is provided as is */
+
+:root{
+  --background: rgb(255, 240, 240);
+  --text: rgb(117, 54, 76);
+
+  --navbar: rgb(246, 173, 191);
+
+  --button-icon: rgb(194, 59, 115);
+  --button-highlight: rgb(255, 188, 200);
+
+  --user-pfp-background: rgb(255, 188, 200);
+  --user-pfp-ring-background: rgb(255, 166, 187);
+  --user-pfp-ring: var(--background);
+  --user-pfp-ring-active: var(--Purr);
+
+  --search-bar: rgb(240, 223, 225);
+
+  --Blue: #799DDB;
+  --Red: #F38BA8;
+  --Cyan: #89DCEB;
+  --Pink: #F5C2E7;
+  --Yellow: #F9E2AF;
+  --Orange: #F3B993;
+  --Green: #A2DCAA;
+  --Purr: #C6A1F0;
+}
