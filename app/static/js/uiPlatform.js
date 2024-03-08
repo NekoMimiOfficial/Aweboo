@@ -4,6 +4,8 @@ window.addEventListener('load', function() {
   }else{
     loadCSS('/static/css/mobile.css');
   }
+
+  loadCSS('/static/themes/'+FLASK_theme+'.css');
 });
 
 function loadCSS(url) {
@@ -15,6 +17,7 @@ function loadCSS(url) {
 
 function loadNav() {
   var nav = document.createElement('div');
+  nav.id = 'global-navigation';
   nav.className = 'nav-bar';
 
   var homeLink = document.createElement('a');

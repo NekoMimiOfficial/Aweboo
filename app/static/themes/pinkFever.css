@@ -8,6 +8,7 @@
   --text: rgb(117, 54, 76);
 
   --navbar: rgb(246, 173, 191);
+  --navbar-blur: rgba(246, 173, 191, 0.4);
 
   --button-icon: rgb(194, 59, 115);
   --button-highlight: rgb(255, 188, 200);
@@ -18,6 +19,10 @@
   --user-pfp-ring-active: var(--Purr);
 
   --search-bar: rgb(240, 223, 225);
+  --search-bar-blur: rgba(240, 223, 225, 0.4);
+
+  --glance-gradient: #FDD;
+  --watching: #FDD;
 
   --Blue: #799DDB;
   --Red: #F38BA8;

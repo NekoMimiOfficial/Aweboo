@@ -2,10 +2,10 @@ from flask import Flask, render_template
 from NekoMimi import utils, colourimi
 
 __version__ = "0.0.1"
-__build__ = 0x000003
+__build__ = 0x000005
 
 UI_SETTINGS = {
-    'theme' : 'pinkFever.css'
+    'theme' : 'mocha'
 }
 
 factory = colourimi.colourFactory()

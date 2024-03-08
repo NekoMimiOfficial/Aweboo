@@ -3,8 +3,13 @@
   <head>
     <title>Aweboo</title>
     <meta charset="UTF-8">
+    <meta name="title" content="Aweboo">
+    <meta name="og:title" content="Aweboo">
+    <meta name="description" content="Aweboo, an anilist media server running on port 9039">
+    <meta name="o:description" content="Aweboo, an anilist media server running on port 9039">
+    <meta name="site_name" content="Aweboo Media Server">
+    <meta name="og:site_name" content="Aweboo Media Server">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/themes/{{ theme }}">
   </head>
 
   <style>
@@ -18,7 +23,12 @@
     }
   </style>
 
+  <script>
+    var FLASK_theme = "{{ theme }}";
+  </script>
+
   <body>
+    <script src='/static/js/uiHome.js'></script>
     <script src='/static/js/uiElements.js'></script>
     <script src='/static/js/uiPlatform.js'></script>
 
@@ -35,7 +45,11 @@
       </div>
     </div>
 
+    <div id='content' class='positional-content'></div>
+
     <div class='window-decorations'></div>
   </body>
 
 </html>
+
+<!-- Classic easter egg eh? -->

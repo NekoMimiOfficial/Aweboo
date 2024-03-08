@@ -8,6 +8,10 @@
   --text: #CDF;
 
   --navbar: #1A1A2C;
+  --navbar-blur: #1A1A2C77;
+
+  --glance-gradient: #171725;
+  --watching: #1A1A2A;
 
   --button-icon: #CDF;
   --button-highlight: #223;
@@ -18,6 +22,7 @@
   --user-pfp-ring-active: var(--Purr);
 
   --search-bar: #223;
+  --search-bar-blur: #22223377;
 
   --Blue: #799DDB;
   --Red: #F38BA8;
