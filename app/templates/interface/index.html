@@ -7,16 +7,51 @@
     <link rel="stylesheet" href="static/themes/{{ theme }}">
   </head>
 
+  <style>
+    img{
+      height: 5px;
+      width: 5px;
+    }
+
+    .nav-bar{
+      opacity: 100%;
+    }
+
+    @font-face{
+      src: url('/static/fonts/terminess-mono-NF.ttf');
+      font-family: 'TMNF';
+    }
+    .nav-element{
+      font-family: 'TMNF';
+      font-size: 50px;
+    }
+  </style>
+
   <body>
     <script src='/static/js/uiElements.js'></script>
     <script src='/static/js/uiPlatform.js'></script>
 
+    <style>.nav-bar{opacity: 100%;}</style>
+
     <div class='nav-bar'>
-      <a><div class='nav-element'></div></a>
-      <a><div class='nav-element'></div></a>
-      <a><div class='nav-element'><img id='user-pfp'></div></a>
-      <a><div class='nav-element'></div></a>
-      <a><div class='nav-element'></div></a>
+      <a><div class='nav-element'></div></a>
+      <a><div class='nav-element'>󰉋</div></a>
+      <a><div class='nav-element'></div></a>
+    </div>
+
+
+    <a><div class='user-page' id='css-pfp'><img src id='user-pfp'></div></a>
+    <div class='search-body'>
+      <div class='search-logo'>
+        <pre>Aweboo</pre>
+      </div>
+    </div>
+
+    <div class='window-decorations'>
+      <div class='decorA'></div>
+      <div class='decorB'></div>
+      <div class='decorC'></div>
+      <div class='decorD'></div>
     </div>
   </body>
 

@@ -1,11 +1,22 @@
-:root{
-  --DARK: #1E1E2E;
-  --DACC: #2E2E3E;
-  --LIGHT: #CDD6F4;
-  --LACC: #B0C0F0;
+/* Catppuccin Mocha theme       */
+/* ~~~~~~~~~~~~~~~~~~~~~~       */
+/* NekoMimiOfficial 8/MAR/2024  */
+/* This theme is provided as is */
 
-  --TEXT_L: #223;
-  --TEXT_D: #CDF;
+:root{
+  --background: #1E1E2E;
+  --text: #CDF;
+
+  --navbar: #1A1A2C;
+
+  --button-icon: #CDF;
+  --button-highlight: #223;
+
+  --user-pfp-background: #223;
+  --user-pfp-ring: #2E2E3E;
+  --user-pfp-ring-active: var(--Purr);
+
+  --search-bar: #223;
 
   --Blue: #799DDB;
   --Red: #F38BA8;
@@ -15,15 +26,4 @@
   --Orange: #F3B993;
   --Green: #A2DCAA;
   --Purr: #C6A1F0;
-
-  --ff: monospace, sans-serif;
-
-  --debug: rgba(255,0,0,0.3);
-}
-
-body{
-  padding: 0px;
-  margin: 0px;
-  background-color: var(--LIGHT);
-  color: var(--TEXT_L);
 }
