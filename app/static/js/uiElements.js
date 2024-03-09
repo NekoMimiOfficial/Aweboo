@@ -1,7 +1,3 @@
-window.addEventListener('load', function (){
-  main();
-});
-
 async function connectPFP(userImage){
   document.getElementById('user-pfp').src = userImage;
   document.getElementById('css-pfp').style.animationName = 'show-pfp';
@@ -25,17 +21,3 @@ function sleep(ms){
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function main(){
-  const contentArea = document.getElementById('content');
-  showUI();
-  await sleep(3000);
-  connectPFP('http://0.0.0.0:10039/static/pfp.png');
-  loadNav();
-  contentArea.appendChild(renderGlance());
-  contentArea.appendChild(renderBobber());
-  contentArea.appendChild(renderGlancePlug());
-  contentArea.appendChild(renderWatchHint());
-  contentArea.appendChild(renderNowWatching());
-  contentArea.appendChild(renderFooter());
-  enableBlur();
-}

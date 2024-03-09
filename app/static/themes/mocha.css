@@ -28,6 +28,9 @@
   --bobber: #334;
   --bobber-outline: var(--Blue);
 
+  --notification: var(--Blue);
+  --notification-text: var(--background);
+
   --Blue: #799DDB;
   --Red: #F38BA8;
   --Cyan: #89DCEB;

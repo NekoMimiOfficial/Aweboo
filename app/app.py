@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, abort
 from NekoMimi import utils, colourimi
 
 __version__ = "0.0.1"
-__build__ = 0x000006
+__build__ = 0x000007
 
 UI_SETTINGS = {
     'theme' : 'mocha'
@@ -39,6 +39,13 @@ app = Flask(__name__)
 @app.route("/")
 def _interface():
     return render_template("interface/index.html", **UI_SETTINGS)
+
+@app.route("/API/user.pfp")
+def _API_USER_PFP():
+    if utils.isUp("http://0.0.0.0:10039"):
+        return { 'url' : 'http://0.0.0.0:10039/static/pfp.png' }
+    else:
+        abort(504)
 
 if __name__ == "__main__":
     kprint(utils.figlet("Aweboo", "small"))
