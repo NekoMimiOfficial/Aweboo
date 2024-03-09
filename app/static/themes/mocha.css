@@ -8,13 +8,14 @@
   --text: #CDF;
 
   --navbar: #1A1A2C;
-  --navbar-blur: #1A1A2C77;
+  --navbar-blur: #34345744;
 
   --glance-gradient: #171725;
   --watching: #1A1A2A;
 
   --button-icon: #CDF;
-  --button-highlight: #223;
+  --button-highlight: #3A3A4F;
+  /* --button-highlight: #223; */
 
   --user-pfp-background: #223;
   --user-pfp-ring: #2E2E3E;
@@ -23,6 +24,9 @@
 
   --search-bar: #223;
   --search-bar-blur: #22223377;
+
+  --bobber: #334;
+  --bobber-outline: var(--Blue);
 
   --Blue: #799DDB;
   --Red: #F38BA8;

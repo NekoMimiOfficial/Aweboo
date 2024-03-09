@@ -34,3 +34,11 @@ function renderFooter(){
 
   return footer;
 }
+
+function renderBobber(){
+  const bobber = document.createElement('div');
+  bobber.className = 'home-bobber';
+  bobber.textContent = '>';
+
+  return bobber;
+}

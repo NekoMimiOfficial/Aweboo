@@ -29,9 +29,10 @@ async function main(){
   const contentArea = document.getElementById('content');
   showUI();
   await sleep(3000);
-  connectPFP('/static/neko.png');
+  connectPFP('http://0.0.0.0:10039/static/pfp.png');
   loadNav();
   contentArea.appendChild(renderGlance());
+  contentArea.appendChild(renderBobber());
   contentArea.appendChild(renderGlancePlug());
   contentArea.appendChild(renderWatchHint());
   contentArea.appendChild(renderNowWatching());
