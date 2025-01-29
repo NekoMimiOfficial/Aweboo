@@ -24,6 +24,12 @@
   --glance-gradient: #FDD;
   --watching: #FDD;
 
+  --notification: var(--user-pfp-background);
+  --notification-text: var(--text);
+
+  --bobber: var(--user-pfp-background);
+  --bobber-outline: var(--button-icon);
+
   --Blue: #799DDB;
   --Red: #F38BA8;
   --Cyan: #89DCEB;

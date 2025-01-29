@@ -3,6 +3,7 @@ window.addEventListener('load', function() {
     loadCSS('/static/css/dex.css');
   }else{
     loadCSS('/static/css/mobile.css');
+    FLAG_mobile = true;
   }
 
   loadCSS('/static/themes/'+FLASK_theme+'.css');

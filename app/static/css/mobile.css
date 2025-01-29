@@ -137,13 +137,7 @@ body{
   background-color: var(--search-bar);
   border-radius: 0px;
   animation: 0.38s linear;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-
-.search-body-blur{
-  background-color: var(--search-bar-blur);
-  backdrop-filter: blur(10px);
+  /* animation-delay: 1s; */
 }
 
 @keyframes opening {
@@ -151,6 +145,7 @@ body{
     top: 0px;
     left: 0px;
     transform: translate(0px,0px);
+    background-color: var(--search-bar);
     height: 100%;
     width: 100vw;
     border-radius: 0px;
@@ -190,8 +185,7 @@ body{
     transform: translate(-50%, 0%);
     height: 54px;
     width: calc(100% - 140px);
-    background-color: var(--search-bar-blur);
-    backdrop-filter: blur(10px);
+    background-color: var(--search-bar);
     border-radius: 25px;
     font-size: 20px;
     margin-left: 0px;
@@ -273,24 +267,46 @@ body{
   padding-left: 1px;
   padding-top: 1px;
   background-color: var(--bobber);
+}
+
+.home-bobber::after{
+  content: '';
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  border-radius: 50px;
   animation: pulse 2s infinite linear;
 }
 
 @keyframes pulse{
   0%{
     outline: 0px solid var(--bobber-outline);
+    opacity: 100%;
   }
 
-  20%{
-    outline: 3px solid var(--bobber-outline);
+  8%{
+    /* outline: 2px solid var(--bobber-outline); */
+    opacity: 100%;
   }
 
-  30%{
-    outline: 0px solid var(--bobber-outline);
+  12%{
+    /* outline: 2px solid var(--bobber-outline); */
+    opacity: 50%;
+  }
+
+  14%{
+    outline: 5px solid var(--bobber-outline);
+    opacity: 20%;
+  }
+
+  40%{
+    opacity: 0%;
+    outline: 10px solid var(--bobber-outline);
   }
 
   100%{
     outline: 0px solid var(--bobber-outline);
+    opacity: 0%;
   }
 }
 
@@ -308,5 +324,5 @@ body{
   display: flex;
   align-content: flex-start;
   box-shadow: 0 0 10px -2px var(--notification);
-  z-index: 9999999999;
+  z-index: 9999999;
 }
